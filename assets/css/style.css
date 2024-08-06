@@ -35,7 +35,7 @@ html{
   background-color: #b5ff66;
   font-family: Montserrat, sans-serif;
   font-weight: 800;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   z-index: 50;
 }
 @keyframes appear {
@@ -169,6 +169,7 @@ input[type="checkbox"]{
   background-image: url(../img/intro.png);
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 20px;
+  margin-top: 0;
   border-radius: 20px;
   top: 80px;
   height: 700px;
