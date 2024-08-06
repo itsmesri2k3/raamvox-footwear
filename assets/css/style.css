@@ -210,7 +210,7 @@ input[type="checkbox"]{
   background-color: #b5ff66;
 }
 #shop-body-space{
-  padding-top: 80px;
+  padding-top: 105px;
 }
 #shop-body {
   width: auto;
@@ -237,7 +237,7 @@ input[type="checkbox"]{
   justify-content: center;
 }
 #product-body-space{
-  padding-top: 80px;
+  padding-top: 105px;
 }
 #product-body {
   width: auto;
@@ -259,11 +259,12 @@ input[type="checkbox"]{
   width: max-content;
   text-align: center;
 }
-
+#about-body{
+  padding-top: 120px;
+}
 #about {
   background-color: white;
   width: auto;
-  padding-top: 95px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,7 +321,7 @@ input[type="checkbox"]{
 #contact {
   position: relative;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .contact-form {
   max-width: 600px;
@@ -424,7 +425,7 @@ footer {
   text-transform: capitalize;
 }
 #special-edition-body{
-  padding-top: 80px;
+  padding-top: 100px;
 }
 #special-edition {
   background-color: #b5ff66;
