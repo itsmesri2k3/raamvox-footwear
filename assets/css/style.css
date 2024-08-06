@@ -30,11 +30,13 @@ html{
 .offer-ad{
   position: fixed;
   top: 0%;
-  height: 20px;
+  height: 25px;
   width: 100%;
   background-color: #b5ff66;
   font-family: Montserrat, sans-serif;
   font-weight: 800;
+  padding: 1px;
+  align-items: center;
   z-index: 50;
 }
 @keyframes appear {
