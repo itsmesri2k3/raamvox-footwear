@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 ::-webkit-scrollbar {
   width: 5px; 
@@ -23,12 +22,13 @@ body {
 
 html{
   scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
 }
   *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 } 
 .offer-ad{
   position: fixed;
@@ -36,7 +36,7 @@ html{
   height: 25px;
   width: 100%;
   background-color: #b5ff66;
-  font-family: Montserrat, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 800;
   padding: 1px;
   align-items: center;
@@ -369,7 +369,7 @@ footer {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Josefin Sans", sans-serif;
   padding-top: 20px;
   width: 100%;
 }
@@ -414,12 +414,9 @@ footer {
 .footer-bottom {
   position: relative;
   background: #000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
   padding: 10px 0;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   text-align: center;
 }
 .footer-bottom p {
