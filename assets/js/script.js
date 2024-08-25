@@ -16,3 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
  
+  window.onload = function() {
+    document.body.style.opacity = '1';
+  };
+
