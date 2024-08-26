@@ -20,3 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.opacity = '1';
   };
 
+  function showAlert() {
+    {
+      document.getElementById('customAlert').style.display = 'block';
+      return false;
+  }
+}

@@ -31,17 +31,20 @@
      <li><a class="hovering" href="#contact-body">CONTACT</a></li>
     </ul>
  </nav>
-
+ <div class="alert" id="customAlert">
+    <h2>The Raamvox Footwear website is currently under construction. Shopping option disabled temporarily. Thank you for your patience. Please try again later.</h2>
+    <button onclick="document.getElementById('customAlert').style.display='none'">OKAY</button>
+</div>
 <div id="home-body">
     <div class="outer">
     <div class="intro-title">
-    <p style="font-family: Josefin Sans, sans-serif;">NEW SUMMER SALE</p>
+    <p style="font-family: Josefin Sans, sans-serif;">NEW SUMMER SALE</p><br>
     <h1>SHOES COLLECTION</h1>
     <hr>
     <br>
     <p class="intro-words"><strong>Welcome to RAAMVOX Footwear Hub!</strong><br>Discover stylish and comfortable footwear from top brands. Step up your style with our curated collection.</p>
     <br>
-    <a class="shop-btn" href="#shop-body-space">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a>
+    <a id="shop-btn" href="#shop-body-space">SHOP NOW</a>
     </div>
     </div>
 </div>
@@ -83,14 +86,14 @@
     </div>
     <br>
     <div id="product" class="menu">
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-1.jpg" alt="" width="260" height="260"><p>82% OFF</p></div><nav class="item-details">Men/Women</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike-Air Max Golf Pro</div><nav class="price-tag">₹1299</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-2.jpg" alt="" width="260" height="260"><p>69% OFF</p></div><nav class="item-details">Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Slides-Flex Sports</div><nav class="price-tag">₹2999</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-3.jpg" alt="" width="260" height="260"><p>72% OFF</p></div><nav class="item-details">Women/Casuals</nav><div class="brand-name">BATA</div><div class="brand-type">Bata Casual-Sneakers Nex</div><nav class="price-tag">₹1599</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-4.jpg" alt="" width="260" height="260"><p>78% OFF</p></div><nav class="item-details">Men/Sports</nav><div class="brand-name">PUMA</div><div class="brand-type">Puma Motorsport-Series</div><nav class="price-tag">₹1999</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-5.jpg" alt="" width="260" height="260"><p>86% OFF</p></div><nav class="item-details">Men</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Basketball-Air PRO</div><nav class="price-tag">₹3299</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-6.jpg" alt="" width="260" height="260"><p>70% OFF</p></div><nav class="item-details">Men/Casuals</nav><div class="brand-name">ADIDAS</div><div class="brand-type">Adidas Running-Ultraboost</div><nav class="price-tag">₹1799</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-7.jpg" alt="" width="260" height="260"><p>84% OFF</p></div><nav class="item-details">Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Air Force-Blazer</div><nav class="price-tag">₹2599</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-8.jpg" alt="" width="260" height="260"><p>77% OFF</p></div><nav class="item-details">Women</nav><div class="brand-name">BATA</div><div class="brand-type">Bata Winter Boots-Wix</div><nav class="price-tag">₹2199</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-1.jpg" alt="" width="260" height="260"><p>82% OFF</p></div><nav class="item-details">Men/Women</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike-Air Max Golf Pro</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹1299</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-2.jpg" alt="" width="260" height="260"><p>69% OFF</p></div><nav class="item-details">Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Slides-Flex Sports</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹2999</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-3.jpg" alt="" width="260" height="260"><p>72% OFF</p></div><nav class="item-details">Women/Casuals</nav><div class="brand-name">BATA</div><div class="brand-type">Bata Casual-Sneakers Nex</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹1599</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-4.jpg" alt="" width="260" height="260"><p>78% OFF</p></div><nav class="item-details">Men/Sports</nav><div class="brand-name">PUMA</div><div class="brand-type">Puma Motorsport-Series</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹1999</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-5.jpg" alt="" width="260" height="260"><p>86% OFF</p></div><nav class="item-details">Men</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Basketball-Air PRO</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹3299</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-6.jpg" alt="" width="260" height="260"><p>70% OFF</p></div><nav class="item-details">Men/Casuals</nav><div class="brand-name">ADIDAS</div><div class="brand-type">Adidas Running-Ultraboost</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹1799</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-7.jpg" alt="" width="260" height="260"><p>84% OFF</p></div><nav class="item-details">Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Air Force-Blazer</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹2599</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/product-8.jpg" alt="" width="260" height="260"><p>77% OFF</p></div><nav class="item-details">Women</nav><div class="brand-name">BATA</div><div class="brand-type">Bata Winter Boots-Wix</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹2199</nav></div>    
     </div>
 </div>
 </div>
@@ -99,9 +102,9 @@
     <div id="special-edition">
     <nav class="ad-intro" id="block"><h1 style=" font-family: Josefin Sans, sans-serif; font-size: 20px;">RaamVox Special Edition</h1></nav>
     <div class="menu">
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-1.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Max GT Special Edition</div><nav class="price-tag">₹799</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-2.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Bata Nitro Ultra Special Edition</div><nav class="price-tag">₹999</nav></div>    
-    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-3.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Puma Spirit RC Special Edition</div><nav class="price-tag">₹899</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-1.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Nike Max GT Special Edition</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹799</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-2.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Bata Nitro Ultra Special Edition</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹999</nav></div>    
+    <div class="product" id="block"><div class="hovered"><img class="pic" src="assets/img/special-3.png" alt="" width="260" height="260"><p>90% OFF</p></div><nav class="item-details">Men/Women/Sports</nav><div class="brand-name">NIKE</div><div class="brand-type">Puma Spirit RC Special Edition</div><nav class="price-tag" id="shop-btn" onclick="showAlert(); return false;">₹899</nav></div>    
     </div>
     </div>
 </div>

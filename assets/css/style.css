@@ -103,7 +103,7 @@ nav ul li a{
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  padding: 8px 15px;
+  padding: 10px;
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -197,20 +197,66 @@ input[type="checkbox"]{
   padding: 20px;
   font-size: 18px;
 }
-.shop-btn {
+#shop-btn {
   color: #b5ff66;
-  background-color: gray;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  padding: 10px;
-  border-radius: 8px;
+  background-color: #252525;
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  padding: 15px !important;
+  border-radius: 10px;
   text-decoration-line: none;
-  font-weight: 500;
   font-size: 15px;
   font-weight: 900;
+  cursor: pointer;
 }
-.shop-btn:hover {
-  color: grey;
+#shop-btn:hover {
+  color: #252525;
   background-color: #b5ff66;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: gray;
+  color: #252525;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  z-index: 1000;
+  animation: slideDown 0.7s forwards;
+}
+@keyframes slideDown {
+  0% {
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  70% {
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  100% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+}
+.alert h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.alert button {
+  background-color: #252525;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  color: #aeff58;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 #shop-body-space{
   padding-top: 105px;
