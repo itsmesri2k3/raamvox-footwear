@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-4</title>
+    <link rel="shortcut icon" href="assets/img/sneakers.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gainsboro;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .product-image {
+			height: 260px;
+			width: 260px;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+                display: flex;
+                padding: 10px 15px;
+                margin-top: 20px;
+                border-radius: 10px;
+                justify-content: center;
+                color: #b5ff66;
+                width: auto;
+                display: inline-block;
+                background-color: gray;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                font-weight: 500;
+                font-size: 20px;
+        }
+
+        .product-description {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .product-options {
+            margin-bottom: 20px;
+        }
+
+        .product-options label {
+            font-size: 1em;
+            margin-right: 10px;
+            font-weight: bold;
+            color: #555;
+            
+        }
+
+        .product-options select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+			outline: none;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            width: 100%;
+            max-width: 300px;
+            cursor: pointer;
+            appearance: none;
+            background: url('arrow-down.svg') no-repeat right center;
+            background-size: 15px;
+        }
+
+        .payment-methods {
+            margin-bottom: 20px;
+        }
+
+        .payment-methods input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .address-input, .card-details-input {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .address-input input, .card-details-input input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+			outline: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .address-input input {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart-btn {
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+       
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                gap: 0px;
+            }
+
+            .product-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .product-title {
+                font-size: 1.8em;
+            }
+
+            .add-to-cart-btn {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+        .item-details {
+                display: flex;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 10px;
+                justify-content: center;
+                color: #b5ff66;
+                width: auto;
+                display: inline-block;
+                background-color: gray;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                font-weight: 900;
+        }
+        #shop-btn {
+                color: #b5ff66;
+                background-color: #252525;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                padding: 15px !important;
+                border-radius: 10px;
+                text-decoration-line: none;
+                font-size: 15px;
+                font-weight: 900;
+                cursor: pointer;
+        }
+        #shop-btn:hover {
+                color: #252525;
+                background-color: #b5ff66;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div class="product-container">
+        <div class="product-image">
+  
+  <img class="pic" src="assets/img/product-4.jpg" alt="" width="260" height="260" style="box-shadow: 0 0 10px rgba(0,0,0,0.3);">   
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">PUMA</h1>
+            <div class="product-description">
+				<h2>Puma Motorsport-Series</h2>
+				<h3 class="item-details">Men/Sports</h3><br><br>
+				<p>78% OFF</p><p class="product-price">₹1999</p><br><br><p>Include all Tax + GST</p>
+            </div>
+            <div class="product-options">
+                <label for="size">Size</label>
+            
+                <select id="size" name="size" style="background-color: #f9f9f9;">
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">X-Large</option>
+                </select>
+            </div>
+			<div class="payment-methods">
+				<p>Payment Method</p><br>
+				<label>
+					<input type="radio" name="payment" value="online"> Online Payment
+				</label><br><br>
+				<label>
+					<input type="radio" name="payment" value="cod"> Cash on Delivery
+				</label>
+			</div>
+            <div class="address-input" id="address-input">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+                <label for="pincode">Pincode</label>
+                <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode">
+            </div>
+            <div class="card-details-input" id="card-details-input">
+                <label for="card-number">Card Number</label>
+                <input type="number" id="card-number" name="card-number" placeholder="Enter card number">
+                <label for="card-expiry">Expiry Date</label>
+                <input type="number" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+                <label for="card-cvc">CVC</label>
+                <input type="number" id="card-cvc" name="card-cvc" placeholder="Enter CVC">
+            </div>
+            <button class="add-to-cart-btn" id="shop-btn">BUY</button>
+        </div>
+    </div>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+    // Set initial state to none
+    document.getElementById('address-input').style.display = 'none';
+    document.getElementById('card-details-input').style.display = 'none';
+
+    // Event listener for payment method selection
+    document.querySelectorAll('input[name="payment"]').forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            if (this.value === 'cod') {
+                document.getElementById('address-input').style.display = 'block';
+                document.getElementById('card-details-input').style.display = 'none';
+            } else if (this.value === 'online') {
+                document.getElementById('address-input').style.display = 'none';
+                document.getElementById('card-details-input').style.display = 'block';
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

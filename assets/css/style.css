@@ -306,6 +306,7 @@ input[type="checkbox"]{
   padding: 10px;
   border-radius: 20px;
   width: max-content;
+  padding-bottom: 25px;
   text-align: center;
 }
 #about-body{
