@@ -6,6 +6,129 @@
     <title>RAAMVOX</title>
     <link rel="shortcut icon" href="assets/img/sneakers.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .profile-card {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 300px;
+          width: 100%;
+          background-color: #252525;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+          border: 2px solid #383838;
+          border-radius: 24px;
+          padding-top: 15px;
+          opacity: 0; /* Initially hidden */
+          visibility: hidden; /* Initially hidden */
+          transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .profile-card.show {
+          opacity: 1;
+          visibility: visible;
+        }
+        .image {
+          position: relative;
+          height: 140px;
+          width: 140px;
+          border-radius: 20px;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+        .image .profile-img {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border: 2px solid #383838;
+          background-color: gray;
+          box-shadow: 0 0 10px rgba(0,0,0,0.9);
+          border-radius: 20px;
+        }
+        .profile-card .text-data {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+        }
+        .text-data .name {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .text-data .job {
+          font-size: 15px;
+          font-weight: 400;
+          margin-top: 5px;
+        }
+    
+        .profile-card .buttons {
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+        }
+        .buttons .button {
+          font-size: 14px;
+          font-weight: 400;
+          border: 2px solid #383838;
+          border-radius: 10px;
+          margin: 0 10px;
+          padding: 10px 25px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          background-color: #2B2B2D;
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+          background: linear-gradient(to right, #F3BB61, #F2DF7B);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .buttons .button:hover {
+          background-color: #333;
+        }
+        .profile-card .analytics {
+          display: flex;
+          align-items: center;
+          margin-top: 25px;
+        }
+        .analytics .data {
+          display: flex;
+          align-items: center;
+          color: white;
+          font-size: 20px;
+          padding: 0 20px;
+          transition: all 0.3s ease;
+        }
+        .analytics .data:hover {
+          color: rgb(117, 117, 117);
+        }
+        .toggle-button {
+          font-size: 16px;
+          border: none;
+          background-color: transparent;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .close-button {
+          cursor: pointer;
+        }
+        #highlight {
+        background-color: #2B2B2D;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        color: rgb(161, 161, 161);
+        border-radius: 10px;
+        padding: 10px;
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid #383838;
+        }
+      </style>
 </head>
 
 <body oncontextmenu="return false;">
@@ -155,7 +278,7 @@
     </div>
     <nav style="display: flex; justify-content: center; width: 100%;">
     <div class="footer-bottom" id="blocks">
-    <p>Designed by <img src="assets/img/raamvox-lime green.png" alt="" height="13px" style="cursor: pointer; bottom: -2px; position: relative;"></p>
+    <p>Designed by <button class="toggle-button"><img src="assets/img/raamvox-lime green.png" alt="" height="13px" style="cursor: pointer; bottom: -2px; position: relative;"></button></p>
     </div>
     </nav>
     </footer>
@@ -163,9 +286,49 @@
     </div>
 </div>
 
+
+<div class="profile-card">
+    <div style="z-index: 100; display: flex; justify-content: end; width: 100%; padding-right: 20px; padding-top: 20px;">
+      <i class="fa-regular fa-circle-xmark fa-xl close-button" style="color: grey"></i>
+    </div>
+    <div class="image">
+      <img src="assets/img/No BG Box Pic.png" alt="" class="profile-img">
+    </div>
+
+    <div class="text-data">
+      <span class="name">SRIRAAM PRABU</span>
+      <span class="job" id="highlight">Full Stack Developer</span>
+    </div>
+
+    <div class="analytics">
+      <div class="data">
+        <i class="fa-brands fa-square-github"></i>
+      </div>
+      <div class="data">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="data">
+        <i class="fa-brands fa-square-upwork"></i>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a class="button" href="https://sriraamprabu.vercel.app/">About Me</a>
+    </div><br>
+  </div>
 </body>
 
 <script src="https://kit.fontawesome.com/f8e1a90484.js"></script>
 <script src="assets/js/script.js"></script>
+
+<script>
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      document.querySelector('.profile-card').classList.toggle('show');
+    });
+
+    document.querySelector('.close-button').addEventListener('click', function() {
+      document.querySelector('.profile-card').classList.remove('show');
+    });
+</script>
 
 </html>
