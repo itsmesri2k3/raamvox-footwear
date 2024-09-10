@@ -18,6 +18,8 @@ body {
   scrollbar-color: #b5ff66 transparent;
   opacity: 0;
   transition: opacity 0.3s ease-in;
+  font-family: "Josefin Sans", sans-serif;
+
 }
 
 html{
@@ -28,7 +30,6 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
 } 
 .offer-ad{
   position: fixed;
