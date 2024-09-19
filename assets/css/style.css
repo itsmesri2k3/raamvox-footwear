@@ -127,7 +127,7 @@ input[type="checkbox"]{
 }
 @media (max-width: 1000px){
   nav{
-    padding: 0 40px 0 50px;
+    padding-right: 13px;
   }
 }
 @media (max-width: 995px) {
