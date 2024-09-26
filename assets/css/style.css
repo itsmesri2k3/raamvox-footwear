@@ -13,6 +13,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(181, 255, 102, 0.8);
 }
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
 body {
   scrollbar-width: thin;
   scrollbar-color: #b5ff66 transparent;
