@@ -13,9 +13,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(181, 255, 102, 0.8);
 }
-a, button {
-  -webkit-tap-highlight-color: transparent;
-}
 body {
   scrollbar-width: thin;
   scrollbar-color: #b5ff66 transparent;
@@ -33,6 +30,7 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 } 
 .offer-ad{
   position: fixed;
