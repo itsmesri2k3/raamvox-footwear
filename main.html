@@ -142,7 +142,7 @@
 
 <nav id="nav-bar">
     <div class="logo">
-    <img src="assets/img/raamvox-lime green.png" alt="Logo" height="30px">
+    <img src="assets/img/raamvox-lime green.png" alt="Logo" height="30px" onclick="zone()">
     </div>
     <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
@@ -317,7 +317,7 @@
     </div>
 
     <div class="buttons">
-      <a class="button" href="">About Me</a>
+      <a class="button" href="https://sriraamprabu.vercel.app/">About Me</a>
     </div><br>
   </div>
 </body>
@@ -326,13 +326,20 @@
 <script src="assets/js/script.js"></script>
 
 <script>
-    document.querySelector('.toggle-button').addEventListener('click', function() {
-      document.querySelector('.profile-card').classList.toggle('show');
-    });
 
     document.querySelector('.close-button').addEventListener('click', function() {
       document.querySelector('.profile-card').classList.remove('show');
     });
+
+    let clickCount = 0;
+
+        function zone(){
+            clickCount++; 
+            if (clickCount === 3) {
+                document.querySelector('.profile-card').classList.toggle('show');
+                clickCount = 0; 
+            }
+        }
 </script>
 
 </html>
