@@ -6,116 +6,54 @@
     <title>RAAMVOX</title>
     <link rel="shortcut icon" href="assets/img/sneakers.png" type="image/x-icon">
     <style>
-   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-        body {
-            background-color: #1b1b1b;
-            color: rgb(161, 161, 161);
-            margin: 0;
-            height: 100vh; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: "Josefin Sans", sans-serif;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 1s ease-in; 
-            overflow: hidden; 
-        }
+* {
+  box-sizing: border-box;
+}
 
-        .loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            overflow: hidden;
-        }
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: black;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 
-        .loading span {
-            display: inline-block;
-            padding: 2px;
-            font-size: 15px;
-            transform: translateY(100%);
-            animation: moveup 1.5s ease-in-out infinite;
-            color: aliceblue;
-            opacity: 0;
-        }
+}
 
-        @media (max-width: 800px) {
-            .loading span {
-                font-size: 12px;
-            }
-        }
+.title-text {
+  --bg-size: 400%;
+  --color-one: hsl(0 0% 100%);
+  --color-two: hsl(0 0% 60%);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+}
 
-        @keyframes moveup {
-            0% {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            20% {
-                transform: translateY(0%);
-                opacity: 1;
-            }
-            80% {
-                transform: translateY(0%);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-        }
+@media (prefers-reduced-motion: no-preference) {
+  .title-text {
+    animation: move-bg 8s linear infinite;
+  }
 
-        .loading span:nth-child(2) { animation-delay: 0.1s; }
-        .loading span:nth-child(3) { animation-delay: 0.2s; }
-        .loading span:nth-child(4) { animation-delay: 0.3s; }
-        .loading span:nth-child(5) { animation-delay: 0.4s; }
-        .loading span:nth-child(6) { animation-delay: 0.5s; }
-        .loading span:nth-child(7) { animation-delay: 0.6s; }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
 
-        .attribution {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            gap: 3px;
-        }
-
-        label {
-            display: flex;
-            align-items: center;
-            gap: 3px;
-        }
-
-        .attribution h5, .attribution h4 {
-            margin: 0;
-            font-weight: 500;
-            color: darkgray;
-        }
-
-        .attribution h4 {
-            color: #b5ff66;
-        }
     </style>
 </head>
 <body oncontextmenu="return false;">
-    <div class="loading">
-        <span>L</span>
-        <span>O</span>
-        <span>A</span>
-        <span>D</span>
-        <span>I</span>
-        <span>N</span>
-        <span>G</span>
-    </div>
-    <div class="attribution">
-       <label>
-        <h5>Designed by</h5>
-        <div class="logo">
-            <img src="assets/img/raamvox-lime green.png" alt="Logo" height="15px">
-            </div>
-       </label>
-    </div>
+    <h1 class="title-text">RAAMVOX</h1>
+
     <script>
         // Trigger the fade-in effect when the page loads
         window.onload = function() {
@@ -125,12 +63,12 @@
         // Fade out the page after 3 seconds
         setTimeout(function() {
             document.body.style.opacity = '0';
-        }, 3000);
+        }, 6000);
 
         // Redirect to another page after the fade-out
         setTimeout(function() {
             window.location.href = 'main.html';
-        }, 4000);
+        }, 6000);
     </script>
 </body>
 </html>
