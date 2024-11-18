@@ -19,13 +19,16 @@ body {
   background: black;
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
+  opacity: 0;
+  transition: opacity 1.5s ease-in; 
+  overflow: hidden; 
 
 }
 
 .title-text {
   --bg-size: 400%;
-  --color-one: hsl(0 0% 100%);
-  --color-two: hsl(0 0% 60%);
+  --color-one: rgb(255, 255, 255);
+  --color-two: rgb(67, 67, 67);
   background: linear-gradient(
       90deg,
       var(--color-one),
@@ -35,6 +38,7 @@ body {
     0 0 / var(--bg-size) 100%;
   color: transparent;
   background-clip: text;
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -52,7 +56,7 @@ body {
     </style>
 </head>
 <body oncontextmenu="return false;">
-    <h2 class="title-text">RAAMVOX</h2>
+    <h1 class="title-text">RAAMVOX</h1>
 
     <script>
         // Trigger the fade-in effect when the page loads
@@ -68,7 +72,7 @@ body {
         // Redirect to another page after the fade-out
         setTimeout(function() {
             window.location.href = 'main.html';
-        }, 5000);
+        }, 6000);
     </script>
 </body>
 </html>
