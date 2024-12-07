@@ -16,8 +16,6 @@
 body {
   scrollbar-width: thin;
   scrollbar-color: #b5ff66 transparent;
-  opacity: 0;
-  transition: opacity 1s ease-in-out; 
   font-family: "Josefin Sans", sans-serif;
 
 }

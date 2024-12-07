@@ -26,11 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
       return false;
   }
 }
-
-// lazyload.js
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll("img");
-  images.forEach(img => {
-      img.setAttribute("loading", "lazy");
-  });
-});
